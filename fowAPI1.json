@@ -1,0 +1,65 @@
+[
+    {
+        "id": "c8ff0d36.8d23f8",
+        "type": "http in",
+        "z": "610513bc.cc3fac",
+        "name": "PDT_O365_GET",
+        "url": "/PDTO365GET",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 300,
+        "y": 260,
+        "wires": [
+            [
+                "c25adeda.b20f3",
+                "9600d1e5.a08fe8"
+            ]
+        ]
+    },
+    {
+        "id": "c25adeda.b20f3",
+        "type": "function",
+        "z": "610513bc.cc3fac",
+        "name": "Réponse",
+        "func": "msg.payload = {\n    \"data2\":\"value2\"\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 200,
+        "wires": [
+            [
+                "bfe72186.6a4088"
+            ]
+        ]
+    },
+    {
+        "id": "9600d1e5.a08fe8",
+        "type": "debug",
+        "z": "610513bc.cc3fac",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 630,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "bfe72186.6a4088",
+        "type": "http response",
+        "z": "610513bc.cc3fac",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 750,
+        "y": 160,
+        "wires": []
+    }
+]
