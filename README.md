@@ -1,1 +1,1 @@
-c'est juste pour cloner mes json NodeREd
+C'est uniquement pour cloner mes json NodeREd ;)
